@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <section class="hero">
+        <h1>Welcome to PrimeStream</h1>
+        <p>Stream your favorite movies and TV shows anytime, anywhere.</p>
+        <button class="cta-button">Browse Movies</button>
+    </section>
+    <section class="movie-catalog">
+        <h2>Featured Movies</h2>
+        <div class="filter-bar">
+            <label for="genre-filter">Filter by Genre:</label>
+            <select id="genre-filter">
+                <option value="all">All</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+        </div>
+        <div class="movie-grid">
+            {% for movie in movies %}
+                <div class="movie-card" data-genre="{{ movie.genre }}">
+                    <img src="{{ movie.poster }}" alt="{{ movie.title }} poster">
+                    <h3>{{ movie.title }}</h3>
+                    <p>{{ movie.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

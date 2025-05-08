@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "The Sci-Fi Adventure",
+        "description": "A thrilling journey through space to save the galaxy.",
+        "genre": "Sci-Fi",
+        "poster": "Amazon _prime app/invasion-planet-earth-scaled.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Mystery Manor",
+        "description": "A detective unravels secrets in a haunted mansion.",
+        "genre": "Mystery",
+        "poster": "Amazon _prime app/rN7O2SDUm4QaRKvLE6eLfQPkAAs.webp"
+    },
+    {
+        "id": 3,
+        "title": "Comedy Nights",
+        "description": "A hilarious tale of friends on a wild night out.",
+        "genre": "Comedy",
+        "poster": "Amazon _prime app/Singh-is-Bling.jpg"
+    }
+]
